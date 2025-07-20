@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+// Define the Rectangle class
+class Rectangle {
+public:
+    // Member variables
+    int length;
+    int width;
+
+    // Member function to calculate area
+    int area() {
+        return length * width;
+    }
+
+    // Member function to display rectangle info
+    void display() {
+        cout << "Length: " << length << endl;
+        cout << "Width: " << width << endl;
+        cout << "Area: " << area() << endl;
+    }
+};
+
+int main() {
+    // Create an object of Rectangle
+    Rectangle rect;
+
+    // Set member variables
+    rect.length = 10;
+    rect.width = 5;
+
+    // Display the details and area
+    rect.display();
+
+    return 0;
+}
